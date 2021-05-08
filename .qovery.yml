@@ -5,8 +5,8 @@ application:
   organization: "QoveryCommunity"
 databases:
 - type: "MYSQL"
-  name: "delegates"
-  version: "8.0"
+  name: "sql11411094"
+  version: "5.7"
 routers:
 - name: "main-elwarsha-miu"
   routes:
