@@ -1,0 +1,15 @@
+---
+application:
+  name: "elwarsha-miu"
+  project: "Elwarsha delegates form"
+  organization: "QoveryCommunity"
+databases:
+- type: "MYSQL"
+  name: "delegates"
+  version: "8.0"
+routers:
+- name: "main-elwarsha-miu"
+  routes:
+  - application_name: "elwarsha-miu"
+    paths:
+    - "/*"
