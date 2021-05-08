@@ -4,6 +4,9 @@ var db = require('../lib/db');
 router.get('/form', function(req, res, next) { 
 res.render('index'); 
 });
+router.get('/thanks', function(req, res, next) { 
+  res.render('thanks'); 
+  });
 router.post('/create', function(req, res, next) {
   
   // store all the user input data
@@ -17,7 +20,7 @@ router.post('/create', function(req, res, next) {
          console.log("User dat is inserted successfully "); 
   });
 
- res.redirect('/users/form');  // redirect to user form page after inserting the data
+ res.redirect('/users/thanks');  // redirect to user form page after inserting the data
 }); 
 
 router.get('/done', function(req, res, next) {
