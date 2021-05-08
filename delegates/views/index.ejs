@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <script src="/js/script.js" async></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>ElWarsha MIU</title>
+  </head>
+  
+  <body class="form-v5">
+    
+    <div class="page-content">
+      <div class="form-v5-content">
+        <form class="form-detail" action="/users/create" method="POST" autocomplete="off">
+          
+          <div class="form-row logo">
+            <img class = "logo" src="/images/logo_stroke.png">
+          </div>
+
+    <div class="form-row">
+    <label for="fullname">Full Name</label>
+    <input type="text" name="fullname" id="fullname" class="input-text" placeholder="Full Name" required>
+    </div>
+
+
+    <div class="form-row">
+        <label for="faculty">Faculty</label>
+        <select name="faculty" class="form-select" aria-label="Default select example">
+          <option selected>Choose Your Faculty</option>
+          <option name="faculty" id="faculty" value="Al-Alsun">Al-Alsun</option>
+          <option name="faculty" id="faculty" value="Architecture">Architecture</option>
+          <option name="faculty" id="faculty" value="Business Administration">Business Administration</option>
+          <option name="faculty" id="faculty" value="Computer Science">Computer Science</option>
+          <option name="faculty" id="faculty" value="Dentistry">Dentistry</option>
+          <option name="faculty" id="faculty" value="ECE">ECE</option>
+          <option name="faculty" id="faculty" value="Mass communication">Mass Communication</option>
+          <option name="faculty" id="faculty" value="Pharmacy">Pharmacy</option>
+        </select required>
+        <br>
+    </div>
+
+    <div class="form-row">
+      <label for="uni_id">University ID</label>
+      <input type="text" name="uni_id" id="uni_id" class="input-text" placeholder="Example -> 19/01234" required>
+      </div>
+
+      <div class="form-row">
+        <label for="phone">Phone Number</label>
+        <input type="text" name="phone" id="phone" class="input-text" placeholder="Phone Number" required>
+        </div>
+
+    <div class="form-row">
+    <label for="email">Your Email</label>
+    <input type="email" name="email" id="email" class="input-text" placeholder="Your Email" required pattern="[^@]+@[^@]+.[a-zA-Z]{2,6}">
+    </div>
+<div class = "done" id="done">
+
+</div>
+    <div class="form-row">
+      <label for="workshop">Workshop</label>
+      <select name="workshop" class="form-select" aria-label="Default select example">
+        <option selected>Choose Your Workshop</option>
+        <option name="workshop" id="workshop" value="Creative Art">Creative Art</option>
+        <option name="workshop" id="workshop" value="Painting">Painting</option>
+        <option name="workshop" id="workshop" value="3D Origami">3D Origami</option>
+        <option name="workshop" id="workshop" value="Portrait">Portrait</option>
+        <option name="workshop" id="workshop" value="Abstract Art">Abstract Art</option>
+        <option name="workshop" id="workshop" value="Typography" required>Typography</option>
+      </select>
+      <br>
+  </div>
+
+  <div class="form-row">
+    <label for="day">Choose interview day</label>
+    <select name="day" id="day" class="form-select" aria-label="Default select example">
+      <option selected>Choose interview day</option>
+      <option name="day" id="day" value="Thursday 6/7" required>Thursday 6/7</option>
+      <option name="day" id="day" value="Friday 7/7" required>Friday 7/7</option>
+      <option name="day" id="day" value="Saturday 8/7" required>Saturday 8/7</option>
+      <option name="day" id="day" value="Sunday 9/7" required>Sunday 9/7</option>
+      <option name="day" id="day" value="Monday 10/7" required>Monday 10/7</option>
+      <option name="day" id="day" value="Tuesday 11/7" required>Tuesday 11/7</option>
+      <option name="day" id="day" value="Wednesday 12/7" required>Wednesday 12/7</option>
+    </select>
+    <br>
+</div>
+
+
+  <div class="form-row">
+    <label for="time">Choose interview time</label>
+    <select name="time" id="time" class="form-select" aria-label="Default select example">
+    </select>
+    <br>
+</div>
+
+    <div class="form-row-last">
+    <button type="submit" class="register" id="submit" >Submit</button>
+    </div>
+    </form>
+    </div>
+    </div>
+    </body>
+</html>
