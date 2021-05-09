@@ -15,7 +15,7 @@ var timeRem = document.getElementsByTagName('option');
  $(document).ready(function () {
     $("#day").change(function () {  
         var selectedDay = $(this).val();
-        if (selectedDay == "Thursday 6/5") {
+        if (selectedDay == "Thursday 13/5") {
             $.get(`done?day=${selectedDay}`, function(data, status){
                 let len = thursdayTime.length;
                 var alreadySelectedArray = [];
@@ -33,7 +33,7 @@ var timeRem = document.getElementsByTagName('option');
                     }
                 }
             });
-        } else if (selectedDay == "Friday 7/5") {
+        } else if (selectedDay == "Friday 14/5") {
             $.get(`done?day=${selectedDay}`, function(data, status){
                 let len = fridayTime.length;
                 var alreadySelectedArray = [];
@@ -51,7 +51,7 @@ var timeRem = document.getElementsByTagName('option');
                     }
                 }
               });
-        } else if (selectedDay == "Saturday 8/5") {
+        } else if (selectedDay == "Saturday 15/5") {
             $.get(`done?day=${selectedDay}`, function(data, status){
                 let len = saturdayTime.length;
                 var alreadySelectedArray = [];
