@@ -12,32 +12,12 @@ var timeRem = document.getElementsByTagName('option');
 
 
 
-/* $(document).ready(function(){
-    $.get("done", function(data, status){
-        let len = thursdayTime.length;
-        var alreadySelectedArray = [];
-        $.each(data,function(key,val){
-            alreadySelectedArray.push(val.thursdayTime);
-        });
-        
-        for (var i = 0 ; i < len ; i++){
-            var opt = document.createElement('option');
-            opt.value = thursdayTime[i];
-            opt.innerHTML = thursdayTime[i];
-            if(!alreadySelectedArray.includes(thursdayTime[i])){
-                select.appendChild(opt);
-            }
-        }
-      });
-}); */ 
-
-
  $(document).ready(function () {
     $("#day").change(function () {  
         var selectedDay = $(this).val();
-        if (selectedDay == "Thursday 6/7") {
+        if (selectedDay == "Sunday 6/5") {
             $.get(`done?day=${selectedDay}`, function(data, status){
-                let len = thursdayTime.length;
+                let len = sundayTime.length;
                 var alreadySelectedArray = [];
                 $("#time").html("");
                 console.log(data);
@@ -46,68 +26,14 @@ var timeRem = document.getElementsByTagName('option');
                 });
                 for (var i = 0 ; i < len ; i++){
                     var opt = document.createElement('option');
-                    opt.value = thursdayTime[i];
-                    opt.innerHTML = thursdayTime[i];
-                    if(!alreadySelectedArray.includes(thursdayTime[i])){
-                        select.appendChild(opt);
-                    }
-                }
-            });
-        } else if (selectedDay == "Friday 7/7") {
-            $.get(`done?day=${selectedDay}`, function(data, status){
-                let len = fridayTime.length;
-                var alreadySelectedArray = [];
-                $("#time").html("");
-                $.each(data,function(key,val){
-                    alreadySelectedArray.push(val.time);
-                });
-                
-                for (var i = 0 ; i < len ; i++){
-                    var opt = document.createElement('option');
-                    opt.value = fridayTime[i];
-                    opt.innerHTML = fridayTime[i];
-                    if(!alreadySelectedArray.includes(fridayTime[i])){
-                        select.appendChild(opt);
-                    }
-                }
-              });
-        } else if (selectedDay == "Saturday 8/7") {
-            $.get(`done?day=${selectedDay}`, function(data, status){
-                let len = saturdayTime.length;
-                var alreadySelectedArray = [];
-                $("#time").html("");
-                $.each(data,function(key,val){
-                    alreadySelectedArray.push(val.time);
-                });
-                
-                for (var i = 0 ; i < len ; i++){
-                    var opt = document.createElement('option');
-                    opt.value = saturdayTime[i];
-                    opt.innerHTML = saturdayTime[i];
-                    if(!alreadySelectedArray.includes(saturdayTime[i])){
-                        select.appendChild(opt);
-                    }
-                }
-              });
-        } else if (selectedDay == "Sunday 9/7") {
-            $.get(`done?day=${selectedDay}`, function(data, status){
-                let len = sundayTime.length;
-                var alreadySelectedArray = [];
-                $("#time").html("");
-                $.each(data,function(key,val){
-                    alreadySelectedArray.push(val.time);
-                });
-                
-                for (var i = 0 ; i < len ; i++){
-                    var opt = document.createElement('option');
                     opt.value = sundayTime[i];
                     opt.innerHTML = sundayTime[i];
                     if(!alreadySelectedArray.includes(sundayTime[i])){
                         select.appendChild(opt);
                     }
                 }
-              });
-        } else if (selectedDay == "Monday 10/7") {
+            });
+        } else if (selectedDay == "Monday 7/5") {
             $.get(`done?day=${selectedDay}`, function(data, status){
                 let len = mondayTime.length;
                 var alreadySelectedArray = [];
@@ -125,7 +51,7 @@ var timeRem = document.getElementsByTagName('option');
                     }
                 }
               });
-        } else if (selectedDay == "Tuesday 11/7") {
+        } else if (selectedDay == "Tuesday 8/5") {
             $.get(`done?day=${selectedDay}`, function(data, status){
                 let len = tuesdayTime.length;
                 var alreadySelectedArray = [];
@@ -143,7 +69,7 @@ var timeRem = document.getElementsByTagName('option');
                     }
                 }
               });
-        } else if (selectedDay == "Wednesday 12/7") {
+        } else if (selectedDay == "Wednesday 9/5") {
             $.get(`done?day=${selectedDay}`, function(data, status){
                 let len = wednesdayTime.length;
                 var alreadySelectedArray = [];
@@ -157,6 +83,60 @@ var timeRem = document.getElementsByTagName('option');
                     opt.value = wednesdayTime[i];
                     opt.innerHTML = wednesdayTime[i];
                     if(!alreadySelectedArray.includes(wednesdayTime[i])){
+                        select.appendChild(opt);
+                    }
+                }
+              });
+        } else if (selectedDay == "Thursday 10/5") {
+            $.get(`done?day=${selectedDay}`, function(data, status){
+                let len = thursdayTime.length;
+                var alreadySelectedArray = [];
+                $("#time").html("");
+                $.each(data,function(key,val){
+                    alreadySelectedArray.push(val.time);
+                });
+                
+                for (var i = 0 ; i < len ; i++){
+                    var opt = document.createElement('option');
+                    opt.value = thursdayTime[i];
+                    opt.innerHTML = thursdayTime[i];
+                    if(!alreadySelectedArray.includes(thursdayTime[i])){
+                        select.appendChild(opt);
+                    }
+                }
+              });
+        } else if (selectedDay == "Friday 11/5") {
+            $.get(`done?day=${selectedDay}`, function(data, status){
+                let len = fridayTime.length;
+                var alreadySelectedArray = [];
+                $("#time").html("");
+                $.each(data,function(key,val){
+                    alreadySelectedArray.push(val.time);
+                });
+                
+                for (var i = 0 ; i < len ; i++){
+                    var opt = document.createElement('option');
+                    opt.value = fridayTime[i];
+                    opt.innerHTML = fridayTime[i];
+                    if(!alreadySelectedArray.includes(fridayTime[i])){
+                        select.appendChild(opt);
+                    }
+                }
+              });
+        } else if (selectedDay == "Saturday 12/5") {
+            $.get(`done?day=${selectedDay}`, function(data, status){
+                let len = saturdayTime.length;
+                var alreadySelectedArray = [];
+                $("#time").html("");
+                $.each(data,function(key,val){
+                    alreadySelectedArray.push(val.time);
+                });
+                
+                for (var i = 0 ; i < len ; i++){
+                    var opt = document.createElement('option');
+                    opt.value = saturdayTime[i];
+                    opt.innerHTML = saturdayTime[i];
+                    if(!alreadySelectedArray.includes(saturdayTime[i])){
                         select.appendChild(opt);
                     }
                 }
